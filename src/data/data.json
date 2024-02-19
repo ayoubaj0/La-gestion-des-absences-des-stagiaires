@@ -1,0 +1,926 @@
+{
+  "stagiaires": [
+    {
+      "id": "1",
+      "name": "Youssef Tazi",
+      "email": "youssef@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Hafsa Ait Addi",
+      "email": "hafsa@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Rachid El Mansouri",
+      "email": "rachid@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Souad Oulad Ali",
+      "email": "souad@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Khalid Ait Hamou",
+      "email": "khalid@example.com"
+    },
+    {
+      "id": "6",
+      "name": "Zineb Amrani",
+      "email": "zineb@example.com"
+    },
+    {
+      "id": "7",
+      "name": "Fadoua El Haddadi",
+      "email": "fadoua@example.com"
+    },
+    {
+      "id": "8",
+      "name": "Nadia Oubella",
+      "email": "nadia@example.com"
+    },
+    {
+      "id": "9",
+      "name": "Hamza Bouhaddou",
+      "email": "hamza@example.com"
+    },
+    {
+      "id": "10",
+      "name": "Amina Chahid",
+      "email": "amina@example.com"
+    },
+    {
+      "id": "11",
+      "name": "Mohamed El Amrani",
+      "email": "mohamed@example.com"
+    },
+    {
+      "id": "12",
+      "name": "Salma Tazi",
+      "email": "salma@example.com"
+    },
+    {
+      "id": "13",
+      "name": "Omar Benhima",
+      "email": "omar@example.com"
+    },
+    {
+      "id": "14",
+      "name": "Samira Azrou",
+      "email": "samira@example.com"
+    },
+    {
+      "id": "15",
+      "name": "Said El Khamlichi",
+      "email": "said@example.com"
+    },
+    {
+      "id": "16",
+      "name": "Tilila Ait Addi",
+      "email": "tilila@example.com"
+    },
+    {
+      "id": "17",
+      "name": "Todert Amrani",
+      "email": "todert@example.com"
+    },
+    {
+      "id": "18",
+      "name": "Titrit El Haddadi",
+      "email": "titrit@example.com"
+    },
+    {
+      "id": "19",
+      "name": "Itri Oubella",
+      "email": "itri@example.com"
+    },
+    {
+      "id": "20",
+      "name": "Anir Bouhaddou",
+      "email": "anir@example.com"
+    },
+    {
+      "id": "21",
+      "name": "Achraf El Hachimi",
+      "email": "achraf@example.com"
+    },
+    {
+      "id": "22",
+      "name": "Malika El Khatib",
+      "email": "malika@example.com"
+    },
+    {
+      "id": "23",
+      "name": "Tarik Aziz",
+      "email": "tarik@example.com"
+    }
+  ],
+  "absences": [
+    {
+      "id": "1",
+      "date": "2024-02-01",
+      "name": "Youssef Tazi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "2",
+      "date": "2024-02-01",
+      "name": "Hafsa Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "3",
+      "date": "2024-02-01",
+      "name": "Rachid El Mansouri",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "4",
+      "date": "2024-02-01",
+      "name": "Souad Oulad Ali",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "5",
+      "date": "2024-02-02",
+      "name": "Khalid Ait Hamou",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "6",
+      "date": "2024-02-02",
+      "name": "Zineb Amrani",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "7",
+      "date": "2024-02-02",
+      "name": "Fadoua El Haddadi",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "8",
+      "date": "2024-02-02",
+      "name": "Nadia Oubella",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "9",
+      "date": "2024-02-03",
+      "name": "Hamza Bouhaddou",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "10",
+      "date": "2024-02-03",
+      "name": "Amina Chahid",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "11",
+      "date": "2024-02-03",
+      "name": "Mohamed El Amrani",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "12",
+      "date": "2024-02-03",
+      "name": "Salma Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "13",
+      "date": "2024-02-04",
+      "name": "Omar Benhima",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "14",
+      "date": "2024-02-04",
+      "name": "Samira Azrou",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "15",
+      "date": "2024-02-04",
+      "name": "Said El Khamlichi",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "16",
+      "date": "2024-02-04",
+      "name": "Tilila Ait Addi",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "17",
+      "date": "2024-02-05",
+      "name": "Todert Amrani",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "18",
+      "date": "2024-02-05",
+      "name": "Titrit El Haddadi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "19",
+      "date": "2024-02-05",
+      "name": "Itri Oubella",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "20",
+      "date": "2024-02-05",
+      "name": "Anir Bouhaddou",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "21",
+      "date": "2024-02-06",
+      "name": "Achraf El Hachimi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "22",
+      "date": "2024-02-06",
+      "name": "Malika El Khatib",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "23",
+      "date": "2024-02-06",
+      "name": "Tarik Aziz",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "24",
+      "date": "2024-02-06",
+      "name": "Youssef Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "25",
+      "date": "2024-02-07",
+      "name": "Hafsa Ait Addi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "26",
+      "date": "2024-02-07",
+      "name": "Rachid El Mansouri",
+      "hours": 2,
+      "justified": false
+    },
+    {
+      "id": "27",
+      "date": "2024-02-07",
+      "name": "Souad Oulad Ali",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "28",
+      "date": "2024-02-07",
+      "name": "Khalid Ait Hamou",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "29",
+      "date": "2024-02-08",
+      "name": "Zineb Amrani",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "30",
+      "date": "2024-02-08",
+      "name": "Fadoua El Haddadi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "31",
+      "date": "2024-02-08",
+      "name": "Nadia Oubella",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "32",
+      "date": "2024-02-08",
+      "name": "Hamza Bouhaddou",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "33",
+      "date": "2024-02-09",
+      "name": "Amina Chahid",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "34",
+      "date": "2024-02-09",
+      "name": "Mohamed El Amrani",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "35",
+      "date": "2024-02-09",
+      "name": "Salma Tazi",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "36",
+      "date": "2024-02-10",
+      "name": "Omar Benhima",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "37",
+      "date": "2024-02-10",
+      "name": "Samira Azrou",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "38",
+      "date": "2024-02-10",
+      "name": "Said El Khamlichi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "39",
+      "date": "2024-02-10",
+      "name": "Tilila Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "40",
+      "date": "2024-02-11",
+      "name": "Todert Amrani",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "41",
+      "date": "2024-02-11",
+      "name": "Titrit El Haddadi",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "42",
+      "date": "2024-02-11",
+      "name": "Itri Oubella",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "43",
+      "date": "2024-02-11",
+      "name": "Anir Bouhaddou",
+      "hours": 2,
+      "justified": false
+    },
+    {
+      "id": "44",
+      "date": "2024-02-12",
+      "name": "Achraf El Hachimi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "45",
+      "date": "2024-02-12",
+      "name": "Malika El Khatib",
+      "hours": 2,
+      "justified": false
+    },
+    {
+      "id": "46",
+      "date": "2024-02-12",
+      "name": "Tarik Aziz",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "47",
+      "date": "2024-02-12",
+      "name": "Youssef Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "48",
+      "date": "2024-02-13",
+      "name": "Hafsa Ait Addi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "49",
+      "date": "2024-02-13",
+      "name": "Rachid El Mansouri",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "50",
+      "date": "2024-02-13",
+      "name": "Souad Oulad Ali",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "51",
+      "date": "2024-02-13",
+      "name": "Khalid Ait Hamou",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "52",
+      "date": "2024-02-14",
+      "name": "Zineb Amrani",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "53",
+      "date": "2024-02-14",
+      "name": "Fadoua El Haddadi",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "54",
+      "date": "2024-02-14",
+      "name": "Nadia Oubella",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "55",
+      "date": "2024-02-14",
+      "name": "Hamza Bouhaddou",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "56",
+      "date": "2024-02-15",
+      "name": "Amina Chahid",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "57",
+      "date": "2024-02-15",
+      "name": "Mohamed El Amrani",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "58",
+      "date": "2024-02-15",
+      "name": "Salma Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "59",
+      "date": "2024-02-15",
+      "name": "Omar Benhima",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "60",
+      "date": "2024-02-16",
+      "name": "Samira Azrou",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "61",
+      "date": "2024-02-16",
+      "name": "Said El Khamlichi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "62",
+      "date": "2024-02-16",
+      "name": "Tilila Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "63",
+      "date": "2024-02-16",
+      "name": "Todert Amrani",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "64",
+      "date": "2024-02-17",
+      "name": "Titrit El Haddadi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "65",
+      "date": "2024-02-17",
+      "name": "Itri Oubella",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "66",
+      "date": "2024-02-17",
+      "name": "Anir Bouhaddou",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "67",
+      "date": "2024-02-17",
+      "name": "Achraf El Hachimi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "68",
+      "date": "2024-02-18",
+      "name": "Malika El Khatib",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "69",
+      "date": "2024-02-18",
+      "name": "Tarik Aziz",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "70",
+      "date": "2024-02-18",
+      "name": "Youssef Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "71",
+      "date": "2024-02-18",
+      "name": "Hafsa Ait Addi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "72",
+      "date": "2024-02-19",
+      "name": "Rachid El Mansouri",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "73",
+      "date": "2024-02-19",
+      "name": "Souad Oulad Ali",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "74",
+      "date": "2024-02-19",
+      "name": "Khalid Ait Hamou",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "75",
+      "date": "2024-02-19",
+      "name": "Zineb Amrani",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "76",
+      "date": "2024-02-20",
+      "name": "Fadoua El Haddadi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "77",
+      "date": "2024-02-20",
+      "name": "Nadia Oubella",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "78",
+      "date": "2024-02-20",
+      "name": "Hamza Bouhaddou",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "79",
+      "date": "2024-02-20",
+      "name": "Amina Chahid",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "80",
+      "date": "2024-02-21",
+      "name": "Mohamed El Amrani",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "81",
+      "date": "2024-02-21",
+      "name": "Salma Tazi",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "82",
+      "date": "2024-02-21",
+      "name": "Omar Benhima",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "83",
+      "date": "2024-02-21",
+      "name": "Samira Azrou",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "84",
+      "date": "2024-02-22",
+      "name": "Said El Khamlichi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "85",
+      "date": "2024-02-22",
+      "name": "Tilila Ait Addi",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "86",
+      "date": "2024-02-22",
+      "name": "Todert Amrani",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "87",
+      "date": "2024-02-22",
+      "name": "Titrit El Haddadi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "88",
+      "date": "2024-02-23",
+      "name": "Itri Oubella",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "89",
+      "date": "2024-02-23",
+      "name": "Anir Bouhaddou",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "90",
+      "date": "2024-02-23",
+      "name": "Achraf El Hachimi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "91",
+      "date": "2024-02-23",
+      "name": "Malika El Khatib",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "92",
+      "date": "2024-02-24",
+      "name": "Tarik Aziz",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "93",
+      "date": "2024-02-24",
+      "name": "Youssef Tazi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "94",
+      "date": "2024-02-24",
+      "name": "Hafsa Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "95",
+      "date": "2024-02-24",
+      "name": "Rachid El Mansouri",
+      "hours": 2,
+      "justified": false
+    },
+    {
+      "id": "96",
+      "date": "2024-02-25",
+      "name": "Souad Oulad Ali",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "97",
+      "date": "2024-02-25",
+      "name": "Khalid Ait Hamou",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "98",
+      "date": "2024-02-25",
+      "name": "Zineb Amrani",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "99",
+      "date": "2024-02-25",
+      "name": "Fadoua El Haddadi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "100",
+      "date": "2024-02-26",
+      "name": "Nadia Oubella",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "101",
+      "date": "2024-02-26",
+      "name": "Hamza Bouhaddou",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "102",
+      "date": "2024-02-26",
+      "name": "Amina Chahid",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "103",
+      "date": "2024-02-26",
+      "name": "Mohamed El Amrani",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "104",
+      "date": "2024-02-27",
+      "name": "Salma Tazi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "105",
+      "date": "2024-02-27",
+      "name": "Omar Benhima",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "106",
+      "date": "2024-02-27",
+      "name": "Samira Azrou",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "107",
+      "date": "2024-02-27",
+      "name": "Said El Khamlichi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "108",
+      "date": "2024-02-28",
+      "name": "Tilila Ait Addi",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "109",
+      "date": "2024-02-28",
+      "name": "Todert Amrani",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "110",
+      "date": "2024-02-28",
+      "name": "Titrit El Haddadi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "111",
+      "date": "2024-02-28",
+      "name": "Itri Oubella",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "112",
+      "date": "2024-02-29",
+      "name": "Anir Bouhaddou",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "113",
+      "date": "2024-02-29",
+      "name": "Achraf El Hachimi",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "114",
+      "date": "2024-02-29",
+      "name": "Malika El Khatib",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "115",
+      "date": "2024-02-29",
+      "name": "Tarik Aziz",
+      "hours": 2,
+      "justified": true
+    }
+  ]
+}
