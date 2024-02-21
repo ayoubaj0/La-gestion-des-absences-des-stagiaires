@@ -1,0 +1,306 @@
+{
+  "stagiaires": [
+    {
+      "id": "1",
+      "name": "Youssef Tazi",
+      "email": "youssef@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Hafsa Ait Addi",
+      "email": "hafsa@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Rachid El Mansouri",
+      "email": "rachid@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Souad Oulad Ali",
+      "email": "souad@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Khalid Ait Hamou",
+      "email": "khalid@example.com"
+    },
+    {
+      "id": "6",
+      "name": "Zineb Amrani",
+      "email": "zineb@example.com"
+    },
+    {
+      "id": "7",
+      "name": "Fadoua El Haddadi",
+      "email": "fadoua@example.com"
+    },
+    {
+      "id": "8",
+      "name": "Nadia Oubella",
+      "email": "nadia@example.com"
+    },
+    {
+      "id": "9",
+      "name": "Hamza Bouhaddou",
+      "email": "hamza@example.com"
+    },
+    {
+      "id": "10",
+      "name": "Amina Chahid",
+      "email": "amina@example.com"
+    },
+    {
+      "id": "11",
+      "name": "Mohamed El Amrani",
+      "email": "mohamed@example.com"
+    },
+    {
+      "id": "12",
+      "name": "Salma Tazi",
+      "email": "salma@example.com"
+    },
+    {
+      "id": "13",
+      "name": "Omar Benhima",
+      "email": "omar@example.com"
+    },
+    {
+      "id": "14",
+      "name": "Samira Azrou",
+      "email": "samira@example.com"
+    },
+    {
+      "id": "15",
+      "name": "Said El Khamlichi",
+      "email": "said@example.com"
+    },
+    {
+      "id": "16",
+      "name": "Tilila Ait Addi",
+      "email": "tilila@example.com"
+    },
+    {
+      "id": "17",
+      "name": "Todert Amrani",
+      "email": "todert@example.com"
+    },
+    {
+      "id": "18",
+      "name": "Titrit El Haddadi",
+      "email": "titrit@example.com"
+    },
+    {
+      "id": "19",
+      "name": "Itri Oubella",
+      "email": "itri@example.com"
+    },
+    {
+      "id": "20",
+      "name": "Anir Bouhaddou",
+      "email": "anir@example.com"
+    },
+    {
+      "id": "21",
+      "name": "Achraf El Hachimi",
+      "email": "achraf@example.com"
+    },
+    {
+      "id": "22",
+      "name": "Malika El Khatib",
+      "email": "malika@example.com"
+    },
+    {
+      "id": "23",
+      "name": "Tarik Aziz",
+      "email": "tarik@example.com"
+    }
+  ],
+  "absences": [
+    {
+      "id": "1",
+      "idstagiaire": "1",
+      "date": "2024-02-01",
+      "name": "Youssef Tazi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "2",
+      "idstagiaire": "2",
+      "date": "2024-02-01",
+      "name": "Hafsa Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "3",
+      "idstagiaire": "3",
+      "date": "2024-02-01",
+      "name": "Rachid El Mansouri",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "4",
+      "idstagiaire": "4",
+      "date": "2024-02-01",
+      "name": "Souad Oulad Ali",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "5",
+      "idstagiaire": "5",
+      "date": "2024-02-02",
+      "name": "Khalid Ait Hamou",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "6",
+      "idstagiaire": "6",
+      "date": "2024-02-02",
+      "name": "Zineb Amrani",
+      "hours": 4,
+      "justified": false
+    },
+    {
+      "id": "7",
+      "idstagiaire": "7",
+      "date": "2024-02-02",
+      "name": "Fadoua El Haddadi",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "8",
+      "idstagiaire": "8",
+      "date": "2024-02-02",
+      "name": "Nadia Oubella",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "9",
+      "idstagiaire": "9",
+      "date": "2024-02-03",
+      "name": "Hamza Bouhaddou",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "10",
+      "idstagiaire": "10",
+      "date": "2024-02-03",
+      "name": "Amina Chahid",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "11",
+      "idstagiaire": "11",
+      "date": "2024-02-03",
+      "name": "Mohamed El Amrani",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "12",
+      "idstagiaire": "12",
+      "date": "2024-02-03",
+      "name": "Salma Tazi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "13",
+      "idstagiaire": "13",
+      "date": "2024-02-04",
+      "name": "Omar Benhima",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "14",
+      "idstagiaire": "14",
+      "date": "2024-02-04",
+      "name": "Samira Azrou",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "15",
+      "idstagiaire": "15",
+      "date": "2024-02-04",
+      "name": "Said El Khamlichi",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "16",
+      "idstagiaire": "16",
+      "date": "2024-02-04",
+      "name": "Tilila Ait Addi",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "17",
+      "idstagiaire": "17",
+      "date": "2024-02-05",
+      "name": "Todert Amrani",
+      "hours": 8,
+      "justified": false
+    },
+    {
+      "id": "18",
+      "idstagiaire": "18",
+      "date": "2024-02-05",
+      "name": "Titrit El Haddadi",
+      "hours": 6,
+      "justified": false
+    },
+    {
+      "id": "19",
+      "idstagiaire": "19",
+      "date": "2024-02-05",
+      "name": "Itri Oubella",
+      "hours": 4,
+      "justified": true
+    },
+    {
+      "id": "20",
+      "idstagiaire": "20",
+      "date": "2024-02-05",
+      "name": "Anir Bouhaddou",
+      "hours": 2,
+      "justified": true
+    },
+    {
+      "id": "21",
+      "idstagiaire": "21",
+      "date": "2024-02-06",
+      "name": "Achraf El Hachimi",
+      "hours": 8,
+      "justified": true
+    },
+    {
+      "id": "22",
+      "idstagiaire": "22",
+      "date": "2024-02-06",
+      "name": "Malika El Khatib",
+      "hours": 6,
+      "justified": true
+    },
+    {
+      "id": "23",
+      "idstagiaire": "23",
+      "date": "2024-02-06",
+      "name": "Tarik Aziz",
+      "hours": 4,
+      "justified": false
+    }
+    
+  ]
+}

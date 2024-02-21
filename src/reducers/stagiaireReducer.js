@@ -1,4 +1,4 @@
-import { ADD_STAGIAIRE, DELETE_STAGIAIRE, UPDATE_STAGIAIRE, SET_STAGIAIRES } from '../actions/stagiaireActions';
+import { ADD_STAGIAIRE, DELETE_STAGIAIRE, UPDATE_STAGIAIRE, SET_STAGIAIRES, SET_STAGIAIRE } from '../actions/stagiaireActions';
 
 const initialState = {
     stagiaires : []
@@ -8,6 +8,11 @@ const stagiaireReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_STAGIAIRES:
             return {...state, stagiaires: action.payload};
+    case SET_STAGIAIRE:
+            return {
+              ...state,
+              stagiaire: action.payload,
+            };
     case ADD_STAGIAIRE:
       return {...state, stagiaires:[...state.stagiaires, action.payload]}
     case DELETE_STAGIAIRE:
