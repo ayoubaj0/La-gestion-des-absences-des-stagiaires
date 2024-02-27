@@ -50,30 +50,49 @@ function AddAbsence() {
     //     }
     // }
     return (
-        <form>
-            <Link to="/">Cancel</Link> <br/>
+        <form style={{  width:"400px"}} >
+            <Link class=" primary" to="/absences">Go back to Absence list</Link> <br/>
+
             {/* <label>Id</label>
             <input type="text" value={id} onChange={(e)=>setId(e.target.value)} />
             {id}
               <label>Name</label>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
             <label>Date</label> */}
-            <label for="Id">Id stagiaire</label>
-            <div style={{ display: 'flex', marginLeft:"0px", alignItems: "center"}}>
+            <label for="Id">Id stagiaire :</label>
+            <div style={{ display: 'flex', marginLeft:"0px", alignItems: "center" , width:"max"}}>
                 <input style={{  marginRight:"0px"}} type="number" value={idstagiaire} onChange={(e)=>setIdStagiaire(e.target.value)} />
                 <select style={{  marginLeft:"0px", height: "48px"}} class="form-control" name="" id="" value={idstagiaire} onChange={(e)=>setIdStagiaire(e.target.value)}>
-                  {idstagiaire?"":<option  value={idstagiaire}>--chooser stagiaire--</option>}
+                  {idstagiaire?"":<option  value={idstagiaire}>--choose stagiaire--</option>}
                     {stagiaires.map((stagiaire, index) => (
                         <option key={index} value={stagiaire.id}>{stagiaire.id} - {stagiaire.name}</option>
                     ))}
                 </select>
             </div>
+            <label>Date : </label>
+
             <input type="date" value={date} onChange={(e)=>setDate(e.target.value)} />
-            <label>Hours</label>
-            <input type="number" value={hours} onChange={(e)=>setHours(parseInt(e.target.value))} />
-            <label>Justified</label>
+
+
+            <label>Time :</label>
+            {/* <input type="number" value={hours} onChange={(e)=>setHours(parseInt(e.target.value))} /> */}
+            
+            <div style={{ display: 'flex', marginLeft:"0px", alignItems: "center" , width:"max"}}>
+                <select style={{  marginLeft:"0px", height: "48px"}} class="form-control" name="" id="" value={hours} onChange={(e)=>setHours(parseInt(e.target.value))}>
+                  <option   >--choose time--</option>
+                  <option value={8}>8:00-10:00</option>
+                  <option value={10}>10:00-12:00</option>
+                  <option value={14}>14:00-16:00</option>
+                  <option value={16}>16:00-18:00</option>  
+                </select>
+            </div>
+
+
+
+
+            <label>Justified :</label>
             <input type="checkbox" checked={justified} onChange={(e) => setJustified(e.target.checked)} />
-            <button onClick={handleClick}>Enregistrer</button>
+            <button class="button primary save" onClick={handleClick}>Enregistrer</button>
         </form>
     )
 }

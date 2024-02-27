@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 import { fetchStagiaires, removeStagiaire } from '../../actions/stagiaireActions';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+
 
 function StagiaireList() {
 
@@ -36,8 +38,6 @@ function StagiaireList() {
           (idFilter === '' || stagiaire.id === idFilter)
         );
       });
-    
-
 
     //  const [stagiaires, setStagiaires] = useState([]);
     // const dispatch = useDispatch();
@@ -97,24 +97,33 @@ function StagiaireList() {
 //         )
 //     })}
 // </div>
-<div className="card-container">
-<label htmlFor="nameFilter">Search by Name:</label>
-      <input
-        type="text"
-        id="nameFilter"
-        value={nameFilter}
-        onChange={handleNameChange}
-      />
-      <label htmlFor="idFilter">Search by id:</label>
-      <input
-        type="text"
-        id="idFilter"
-        value={idFilter}
-        onChange={handleIdChange}
-      />
-      <button onClick={handleReset}>Reset</button>
-      <Link to="/stagiaires/add"><button >Add stagiaire</button></Link>
-            <table className="table">
+<div style={{ width: '74%', float:'right' }} className="card-container content">
+<h3>Filter Stagiaire Liste : </h3>
+    <div className="filter-container">
+    <div class="form-row date-range">
+      <div class="form-group ">
+      <label for="nameFilter">Search by Name:</label>
+      <input type="text" class="form-control" id="nameFilter" value={nameFilter} onChange={handleNameChange} />
+    <button class="button primary cancel" onClick={handleReset}>Reset</button>
+
+    </div>
+    <div class="form-group ">
+      <label for="idFilter">Search by id:</label>
+      <input type="text" class="form-control" id="idFilter" value={idFilter} onChange={handleIdChange} />
+    </div>
+    </div>
+
+    </div>
+
+    
+      <h2>Liste stagiaire : </h2>
+      <Link to="/stagiaires/add"><button class="btn btn-primary new mb-3">Add stagiaire</button></Link>
+      <br></br>
+      <i class="fa fa-download btn btn-primary"  aria-hidden="true">
+<ReactHTMLTableToExcel id="test-table-xls-button" className="btn btn-primary"  table="stagiaireTable" filename="stagiaires" sheet="stagiaires" buttonText="Export Table" />
+
+</i>
+            <table id="stagiaireTable" >
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -123,10 +132,7 @@ function StagiaireList() {
                         <th>Action</th>
                     </tr>
                 </thead>
-                {/* {console.log("test")} */}
                 {console.log(stagiaires)}
-
-
                 <tbody>
                     {filteredStagiaires.map((stagiaire, index) => (
                         <tr key={index}>
@@ -134,8 +140,8 @@ function StagiaireList() {
                             <td>{stagiaire.name}</td>
                             <td>{stagiaire.email}</td>
                             <td>
-                                <Link to={`/update-stagiaire/${stagiaire.id}`}><button>Edit</button></Link>
-                                <button onClick={() => handleDelete(stagiaire.id)}>Delete</button>
+                                <Link  to={`/update-stagiaire/${stagiaire.id}`}><button class="btn btn-primary edit">Edit</button></Link>
+                                <button class="btn btn-danger delete ms-4" onClick={() => handleDelete(stagiaire.id)}>Delete</button>
                             </td>
                         </tr>
                     ))}

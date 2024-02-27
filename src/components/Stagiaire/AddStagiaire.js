@@ -48,16 +48,16 @@ function AddStagiaire() {
     // }
     
     return (
-        <form>
+        <form style={{  width:"400px"}}>
             {/* {console.log("ff",stagiaires)} */}
-            <Link to="/stagiaires">Go back to Stagiaire list</Link> <br/>
-            <label>Id</label>
-            <input type="text" value={id} onChange={(e)=>setId(e.target.value)} />
+            <Link class=" primary" to="/stagiaires">Go back to stagiaires list</Link> <br/>
+            <label>Id stagiaire</label>
+            <input style={{  width:"400px"}} type="text" value={id} onChange={(e)=>setId(e.target.value)} />
             <label>Name</label>
-            <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
+            <input style={{  width:"400px"}} type="text" value={name} onChange={(e)=>setName(e.target.value)} />
             <label>Email</label>
-            <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
-            <button onClick={handleClick}>Enregistrer</button>
+            <input  type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <button class="button primary save" onClick={handleClick}>Enregistrer</button>
             {/* {console.log({id,name,email})} */}
         </form>
     )

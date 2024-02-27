@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux"
 import { fetchStagiaires} from '../../actions/stagiaireActions';
 import { fetchAbsences } from '../../actions/absenceActions';
 import { Link } from "react-router-dom"
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+
 
 
 function AbsenceStagiaire() {
@@ -15,19 +17,19 @@ function AbsenceStagiaire() {
   const [fromDateFilter, setFromDateFilter] = useState('');
   const [toDateFilter, setToDateFilter] = useState('');
 
-  const handleNameFilterChange = (e) => {
+  const handleNameChange = (e) => {
     setNameFilter(e.target.value);
   };
 
-  const handleDateFilterChange = (e) => {
+  const handleDateChange = (e) => {
     setDateFilter(e.target.value);
   };
 
-  const handleFromDateFilterChange = (e) => {
+  const handleFromDateChange = (e) => {
     setFromDateFilter(e.target.value);
   };
 
-  const handleToDateFilterChange = (e) => {
+  const handleToDateChange = (e) => {
     setToDateFilter(e.target.value);
   };
   const handleReset = () => {
@@ -129,11 +131,9 @@ console.log("my name",nameFilter);
   const groupAbsencesById = () => {
     const absencesById = [];
   
-    // Group absences by stagiaire id and calculate total, justified, and not justified hours
     filteredAbsences.forEach((absence) => {
       const { idstagiaire, namestagiaire, hours, justified } = absence;
   
-      // If the idstagiaire doesn't exist in absencesById, initialize it
       if (!absencesById[idstagiaire]) {
         absencesById[idstagiaire] = {
           idstg: idstagiaire,
@@ -144,12 +144,11 @@ console.log("my name",nameFilter);
         };
       }
   
-      // Update total hours and justified/not justified hours
-      absencesById[idstagiaire].totalHours += hours;
+      absencesById[idstagiaire].totalHours += 2;
       if (justified) {
-        absencesById[idstagiaire].justifiedHours += hours;
+        absencesById[idstagiaire].justifiedHours += 2;
       } else {
-        absencesById[idstagiaire].notJustifiedHours += hours;
+        absencesById[idstagiaire].notJustifiedHours += 2;
       }
     });
   
@@ -162,45 +161,44 @@ console.log("my name",nameFilter);
   
  
   return (
-    <div>
-      <h2>Absences by Stagiaire</h2>
-      <div>
-        <label htmlFor="nameFilter">Filter by Name:</label>
-        <input
-          type="text"
-          id="nameFilter"
-          value={nameFilter}
-          onChange={handleNameFilterChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="dateFilter">Filter by Date:</label>
-        <input
-          type="date"
-          id="dateFilter"
-          value={dateFilter}
-          onChange={handleDateFilterChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="fromDateFilter">From:</label>
-        <input
-          type="date"
-          id="fromDateFilter"
-          value={fromDateFilter}
-          onChange={handleFromDateFilterChange}
-        />
-        <label htmlFor="toDateFilter">To:</label>
-        <input
-          type="date"
-          id="toDateFilter"
-          value={toDateFilter}
-          onChange={handleToDateFilterChange}
-        />
-      </div>
-      <button onClick={handleReset}>Reset</button>
+    // <div style={{ width: '90%', margin: '0 auto' }}>
+    <div style={{ width: '74%', float:'right' }}>
+     <h3>Filter stagiaire statistiques : </h3>
 
-      <table>
+<div class="filter-container date-range">
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="nameFilter">Search by Name:</label>
+      <input type="text" class="form-control" id="nameFilter" value={nameFilter} onChange={handleNameChange} />
+    </div>
+    <div class="form-group ">
+    <label for="dateFilter">Date:</label>
+      <input type="date" class="form-control" id="dateFilter" placeholder="Search by Date" value={dateFilter} onChange={handleDateChange} />
+    </div>
+  <button class="btn btn-primary cancel" onClick={handleReset}>Reset</button>
+
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="fromDateFilter"> Period From :</label>
+      <input type="date" class="form-control" id="fromDateFilter" value={fromDateFilter} onChange={handleFromDateChange} />
+    </div>
+    <div class="form-group ">
+      <label for="toDateFilter">To :</label>
+      <input type="date" class="form-control" id="toDateFilter" value={toDateFilter} onChange={handleToDateChange} />
+    </div>
+  </div>
+</div>
+
+
+      <h2>Liste absences stagiaire</h2>
+      <i class="fa fa-download btn btn-primary"  aria-hidden="true">
+<ReactHTMLTableToExcel id="test-table-xls-button" className="btn btn-primary"  table="absences-stagiaire" filename="absences-stagiaire" sheet="absences-stagiaire" buttonText="Export Table" />
+
+</i>
+
+      <table id="absences-stagiaire">
         <thead>
           <tr>
             <th>Id Stagiaire</th>
@@ -221,7 +219,7 @@ console.log("my name",nameFilter);
               <td>{absence.notJustifiedHours}</td>
               <td>
                   {/* <Link to={`/update-absence/${absence.id}`}><button>Edit</button></Link> */}
-                  <button onClick={() => toggleTable(absence.namestg)}>{showTable ? "Hide Details" : "Show Details"}</button>
+                  <button onClick={() => toggleTable(absence.namestg)}>{showTable ? <i class="fa fa-eye-slash" aria-hidden="true"></i> : <i class="fa fa-eye" aria-hidden="true"></i>}</button>
             
               </td>
             </tr>
@@ -236,7 +234,7 @@ console.log("my name",nameFilter);
           <tr>
             <th>Date</th>
             {/* <th>Name</th> */}
-            <th>Hours</th>
+            <th>Time</th>
             <th>Justified</th>
             {/* <th>Actions</th>             */}
           </tr>
@@ -246,7 +244,7 @@ console.log("my name",nameFilter);
             <tr key={absence.id}>
               <td>{absence.date}</td>
               {/* <td>{absence.namestagiaire}</td> */}
-              <td>{absence.hours}</td>
+              <td>{absence.hours} - {parseInt(absence.hours)+2}</td>
               <td>{absence.justified ? 'Yes' : 'No'}</td>
               {/* <td>
                   <Link to={`/update-absence/${absence.id}`}><button>Edit</button></Link>

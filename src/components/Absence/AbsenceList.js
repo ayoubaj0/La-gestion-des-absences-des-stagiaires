@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 import {removeAbsence, fetchAbsences} from '../../actions/absenceActions'
 import { fetchStagiaires} from '../../actions/stagiaireActions';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+
 
 function AbsenceList() {
   const [nameFilter, setNameFilter] = useState('');
@@ -121,7 +123,8 @@ function AbsenceList() {
 
 
   return (
-    <div>
+    // <div style={{ width: '90%', margin: '0 auto'  }}>
+      <div style={{ width: '74%', float:'right' }}>
       {/* <label htmlFor="nameFilter">Search by Name:</label>
       <input
         type="text"
@@ -157,92 +160,82 @@ function AbsenceList() {
         value={toDateFilter}
         onChange={handleToDateChange}
       /> */}
-      <div className="filter-container date-range">
-  <div >
-  
-  <div >
-    <label htmlFor="nameFilter">Search by Name:</label>
-    <input
-      type="text"
-      id="nameFilter"
-      value={nameFilter}
-      onChange={handleNameChange}
-    />
-    </div>
-    <div >
-    <label htmlFor="justifiedFilter">Filter by Justified:</label>
-    <select id="justifiedFilter" value={justifiedFilter} onChange={handleJustifiedChange}>
-      <option value="all">All</option>
-      <option value="yes">Justified</option>
-      <option value="no">Not Justified</option>
-    </select>
-  
-  </div>
-  </div>
+      <h3>Filter Absences Liste : </h3>
 
-  
-  
-    <div>
-    <label htmlFor="dateFilter">Date:</label>
-    <input
-      type="date"
-      id="dateFilter"
-      placeholder="Search by Date"
-      value={dateFilter}
-      onChange={handleDateChange}
-    />
+<div class="filter-container date-range">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="nameFilter">Search by Name:</label>
+      <input type="text" class="form-control" id="nameFilter" value={nameFilter} onChange={handleNameChange} />
     </div>
-    <div >
-    <div>
-    <label htmlFor="fromDateFilter">From Date:</label>
-    <input
-      type="date"
-      id="fromDateFilter"
-      value={fromDateFilter}
-      onChange={handleFromDateChange}
-    />
+    <div class="form-group col-md-6">
+      <label for="justifiedFilter">Filter by Justified:</label>
+      <select class="form-control" id="justifiedFilter" value={justifiedFilter} onChange={handleJustifiedChange}>
+        <option value="all">All</option>
+        <option value="yes">Justified</option>
+        <option value="no">Not Justified</option>
+      </select>
     </div>
-    <div>
-    <label htmlFor="toDateFilter">To Date:</label>
-    <input
-      type="date"
-      id="toDateFilter"
-      value={toDateFilter}
-      onChange={handleToDateChange}
-    />
+  <button class="btn btn-primary cancel" onClick={handleReset}>Reset</button>
+
+  </div>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="dateFilter">Date:</label>
+      <input type="date" class="form-control" id="dateFilter" placeholder="Search by Date" value={dateFilter} onChange={handleDateChange} />
+    </div>
+    </div>
+
+    <div class="form-row">
+      
+    <div class="form-group ">
+      <label for="fromDateFilter">Period From :</label>
+      <input type="date" class="form-control" id="fromDateFilter" value={fromDateFilter} onChange={handleFromDateChange} />
+    </div>
+    <div class="form-group ">
+      <label for="toDateFilter">To :</label>
+      <input type="date" class="form-control" id="toDateFilter" value={toDateFilter} onChange={handleToDateChange} />
     </div>
   </div>
-  
-  
 </div>
-      <button onClick={handleReset}>Reset</button>
-      <Link to="/absences/add"><button >Add absence</button></Link>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Name</th>
-            <th>Hours</th>
-            <th>Justified</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredAbsences.map((absence) => (
-            <tr key={absence.id}>
-              <td>{absence.date}</td>
-              <td>{absence.namestagiaire}</td>
-              <td>{absence.hours}</td>
-              <td>{absence.justified ? 'Yes' : 'No'}</td>
-              <td>
-                  <Link to={`/update-absence/${absence.id}`}><button>Edit</button></Link>
-                  <button onClick={() => handleDelete(absence.id)}>Delete</button>
-              </td>
-              {/* {absence.idstagiaire} */}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+
+<h2>Liste des absences : </h2>
+
+<Link to="/absences/add"><button class="btn btn-primary new mb-3">Add absence</button></Link>
+<br></br>
+<i class="fa fa-download btn btn-primary"  aria-hidden="true">
+<ReactHTMLTableToExcel id="test-table-xls-button" className="btn btn-primary"  table="table-absences" filename="absences" sheet="absences" buttonText="Export Table" />
+
+</i>
+
+
+<table id="table-absences" >
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Name</th>
+      <th>time</th>
+      <th>Justified</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {filteredAbsences.map((absence) => (
+      <tr key={absence.id}>
+        <td>{absence.date}</td>
+        <td>{absence.namestagiaire}</td>
+        <td>{absence.hours} - {parseInt(absence.hours)+2}</td>
+        <td>{absence.justified ? 'Yes' : 'No'}</td>
+        <td>
+          <Link to={`/update-absence/${absence.id}`}><button class="btn btn-primary edit">Edit</button></Link>
+          <button class="btn btn-primary delete ms-3" onClick={() => handleDelete(absence.id)}>Delete</button>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
     </div>
   );
 };

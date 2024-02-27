@@ -68,13 +68,15 @@ function UpdateStagiaire() {
     // }
 
     return (
-        <form>
-            <Link to="/">Cancel</Link> <br/>
+        <form style={{  width:"400px"}}>
+            <Link class=" primary" to="/stagiaires">Go back to stagiaires list</Link> <br/>
+            
+
             <label>Name</label>
-            <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
+            <input style={{  width:"400px"}} type="text" value={name} onChange={(e)=>setName(e.target.value)} />
             <label>Email</label>
-            <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
-            <button onClick={handleClick}>Enregistrer</button>
+            <input style={{  width:"400px"}} type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <button class="button primary save" onClick={handleClick}>Enregistrer</button>
         </form>
     )
 }
