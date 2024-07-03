@@ -3,127 +3,172 @@
     {
       "id": "1",
       "name": "Youssef Tazi",
-      "email": "youssef@example.com"
+      "email": "youssef@gmail.com",
+      "dateofbirth": "2004-02-02",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "2",
       "name": "Hafsa Ait Addi",
-      "email": "hafsa@example.com"
+      "email": "hafsa@gmail.com",
+      "dateofbirth": "2003-05-15",
+      "filiere": "Génie Civil"
     },
     {
       "id": "3",
       "name": "Rachid El Mansouri",
-      "email": "rachid@example.com"
+      "email": "rachid@gmail.com",
+      "dateofbirth": "2002-11-20",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "4",
       "name": "Souad Oulad Ali",
-      "email": "souad@example.com"
+      "email": "souad@gmail.com",
+      "dateofbirth": "2000-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "5",
       "name": "Khalid Ait Hamou",
-      "email": "khalid@example.com"
+      "email": "khalid@gmail.com",
+      "dateofbirth": "2000-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "6",
       "name": "Zineb Amrani",
-      "email": "zineb@example.com"
+      "email": "zineb@gmail.com",
+      "dateofbirth": "2000-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "7",
       "name": "Fadoua El Haddadi",
-      "email": "fadoua@example.com"
+      "email": "fadoua@gmail.com",
+      "dateofbirth": "2000-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "8",
       "name": "Nadia Oubella",
-      "email": "nadia@example.com"
+      "email": "nadia@gmail.com",
+      "dateofbirth": "2002-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "9",
       "name": "Hamza Bouhaddou",
-      "email": "hamza@example.com"
+      "email": "hamza@gmail.com",
+      "dateofbirth": "2002-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "10",
       "name": "Amina Chahid",
-      "email": "amina@example.com"
+      "email": "amina@gmail.com",
+      "dateofbirth": "2002-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "11",
       "name": "Mohamed El Amrani",
-      "email": "mohamed@example.com"
+      "email": "mohamed@gmail.com",
+      "dateofbirth": "2002-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "12",
       "name": "Salma Tazi",
-      "email": "salma@example.com"
+      "email": "salma@gmail.com",
+      "dateofbirth": "2004-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "13",
       "name": "Omar Benhima",
-      "email": "omar@example.com"
+      "email": "omar@gmail.com",
+      "dateofbirth": "2004-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "14",
       "name": "Samira Azrou",
-      "email": "samira@example.com"
+      "email": "samira@gmail.com",
+      "dateofbirth": "2004-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "15",
       "name": "Said El Khamlichi",
-      "email": "said@example.com"
+      "email": "said@gmail.com",
+      "dateofbirth": "2004-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "16",
       "name": "Tilila Ait Addi",
-      "email": "tilila@example.com"
+      "email": "tilila@gmail.com",
+      "dateofbirth": "2005-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "17",
       "name": "Todert Amrani",
-      "email": "todert@example.com"
+      "email": "todert@gmail.com",
+      "dateofbirth": "2005-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "18",
       "name": "Titrit El Haddadi",
-      "email": "titrit@example.com"
+      "email": "titrit@gmail.com",
+      "dateofbirth": "2005-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "19",
       "name": "Itri Oubella",
-      "email": "itri@example.com"
+      "email": "itri@gmail.com",
+      "dateofbirth": "2005-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "20",
       "name": "Anir Bouhaddou",
-      "email": "anir@example.com"
+      "email": "anir@gmail.com",
+      "dateofbirth": "2005-02-01",
+      "filiere": "Génie Civil"
     },
     {
       "id": "21",
       "name": "Achraf El Hachimi",
-      "email": "achraf@example.com"
+      "email": "achraf@gmail.com",
+      "dateofbirth": "2006-02-01",
+      "filiere": "Gestion des Entreprises"
     },
     {
       "id": "22",
       "name": "Malika El Khatib",
-      "email": "malika@example.com"
+      "email": "malika@gmail.com",
+      "dateofbirth": "2006-02-01",
+      "filiere": "Développement Digital"
     },
     {
       "id": "23",
       "name": "Tarik Aziz",
-      "email": "tarik@example.com"
+      "email": "tarik@gmail.com",
+      "dateofbirth": "2006-02-01",
+      "filiere": "Génie Civil"
     }
   ],
   "absences": [
     {
       "id": "1",
       "idstagiaire": "1",
-      "name": "",
       "date": "2024-02-01",
       "hours": 8,
-      "justified": false
+      "justified": true
     },
     {
       "id": "2",
@@ -137,21 +182,21 @@
       "idstagiaire": "3",
       "date": "2024-02-01",
       "hours": 10,
-      "justified": true
+      "justified": false
     },
     {
       "id": "4",
       "idstagiaire": "4",
       "date": "2024-02-01",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "5",
       "idstagiaire": "5",
       "date": "2024-02-02",
       "hours": 10,
-      "justified": false
+      "justified": true
     },
     {
       "id": "6",
@@ -221,14 +266,14 @@
       "idstagiaire": "15",
       "date": "2024-02-04",
       "hours": 8,
-      "justified": false
+      "justified": true
     },
     {
       "id": "16",
       "idstagiaire": "16",
       "date": "2024-02-04",
       "hours": 14,
-      "justified": false
+      "justified": true
     },
     {
       "id": "17",
@@ -242,14 +287,14 @@
       "idstagiaire": "18",
       "date": "2024-02-05",
       "hours": 10,
-      "justified": true
+      "justified": false
     },
     {
       "id": "19",
       "idstagiaire": "19",
       "date": "2024-02-05",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "20",
@@ -263,12 +308,11 @@
       "idstagiaire": "21",
       "date": "2024-02-06",
       "hours": 14,
-      "justified": true
+      "justified": false
     },
     {
       "id": "22",
       "idstagiaire": "22",
-      "name": "Malika El Khatib",
       "date": "2024-02-06",
       "hours": 8,
       "justified": false
@@ -276,15 +320,13 @@
     {
       "id": "23",
       "idstagiaire": "23",
-      "name": "Tarik Aziz",
       "date": "2024-02-06",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "24",
       "idstagiaire": "1",
-      "name": "",
       "date": "2024-02-01",
       "hours": 10,
       "justified": false
@@ -308,7 +350,7 @@
       "idstagiaire": "4",
       "date": "2024-02-07",
       "hours": 10,
-      "justified": true
+      "justified": false
     },
     {
       "id": "28",
@@ -350,7 +392,7 @@
       "idstagiaire": "10",
       "date": "2024-02-09",
       "hours": 10,
-      "justified": false
+      "justified": true
     },
     {
       "id": "34",
@@ -432,7 +474,6 @@
     {
       "id": "45",
       "idstagiaire": "22",
-      "name": "Malika El Khatib",
       "date": "2024-02-12",
       "hours": 16,
       "justified": false
@@ -440,7 +481,6 @@
     {
       "id": "46",
       "idstagiaire": "23",
-      "name": "Tarik Aziz",
       "date": "2024-02-12",
       "hours": 8,
       "justified": true
@@ -595,7 +635,6 @@
     {
       "id": "68",
       "idstagiaire": "22",
-      "name": "Malika El Khatib",
       "date": "2024-02-18",
       "hours": 8,
       "justified": true
@@ -603,7 +642,6 @@
     {
       "id": "69",
       "idstagiaire": "23",
-      "name": "Tarik Aziz",
       "date": "2024-02-18",
       "hours": 10,
       "justified": false
@@ -611,7 +649,6 @@
     {
       "id": "70",
       "idstagiaire": "1",
-      "name": "",
       "date": "2024-02-12",
       "hours": 16,
       "justified": true
@@ -642,21 +679,21 @@
       "idstagiaire": "5",
       "date": "2024-02-19",
       "hours": 14,
-      "justified": true
+      "justified": false
     },
     {
       "id": "75",
       "idstagiaire": "6",
       "date": "2024-02-19",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "76",
       "idstagiaire": "7",
       "date": "2024-02-20",
       "hours": 8,
-      "justified": true
+      "justified": false
     },
     {
       "id": "77",
@@ -759,7 +796,6 @@
     {
       "id": "91",
       "idstagiaire": "22",
-      "name": "Malika El Khatib",
       "date": "2024-02-23",
       "hours": 16,
       "justified": true
@@ -767,7 +803,6 @@
     {
       "id": "92",
       "idstagiaire": "23",
-      "name": "Tarik Aziz",
       "date": "2024-02-24",
       "hours": 8,
       "justified": true
@@ -805,7 +840,7 @@
       "idstagiaire": "5",
       "date": "2024-02-25",
       "hours": 8,
-      "justified": true
+      "justified": false
     },
     {
       "id": "98",
@@ -819,7 +854,7 @@
       "idstagiaire": "7",
       "date": "2024-02-25",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "100",
@@ -840,42 +875,42 @@
       "idstagiaire": "10",
       "date": "2024-02-26",
       "hours": 14,
-      "justified": true
+      "justified": false
     },
     {
       "id": "103",
       "idstagiaire": "11",
       "date": "2024-02-26",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "104",
       "idstagiaire": "12",
       "date": "2024-02-27",
       "hours": 10,
-      "justified": true
+      "justified": false
     },
     {
       "id": "105",
       "idstagiaire": "13",
       "date": "2024-02-27",
       "hours": 8,
-      "justified": true
+      "justified": false
     },
     {
       "id": "106",
       "idstagiaire": "14",
       "date": "2024-02-27",
       "hours": 14,
-      "justified": true
+      "justified": false
     },
     {
       "id": "107",
       "idstagiaire": "15",
       "date": "2024-02-27",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "108",
@@ -889,7 +924,7 @@
       "idstagiaire": "17",
       "date": "2024-02-28",
       "hours": 8,
-      "justified": true
+      "justified": false
     },
     {
       "id": "110",
@@ -903,14 +938,14 @@
       "idstagiaire": "19",
       "date": "2024-02-28",
       "hours": 16,
-      "justified": true
+      "justified": false
     },
     {
       "id": "112",
       "idstagiaire": "20",
       "date": "2024-02-29",
       "hours": 8,
-      "justified": true
+      "justified": false
     },
     {
       "id": "113",
@@ -922,10 +957,9 @@
     {
       "id": "114",
       "idstagiaire": "22",
-      "name": "Malika El Khatib",
       "date": "2024-02-29",
       "hours": 14,
-      "justified": true
+      "justified": false
     },
     {
       "id": "8d9e",
@@ -944,22 +978,7 @@
     {
       "id": "29e6",
       "idstagiaire": "1",
-      "name": "",
       "date": "2024-02-14",
-      "hours": 10,
-      "justified": true
-    },
-    {
-      "id": "6c83",
-      "idstagiaire": "12",
-      "date": "2024-02-23",
-      "hours": 14,
-      "justified": true
-    },
-    {
-      "id": "e58b",
-      "idstagiaire": "5",
-      "date": "2024-02-23",
       "hours": 10,
       "justified": true
     }
